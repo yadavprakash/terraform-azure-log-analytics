@@ -22,7 +22,7 @@ for creating AZURE resources, and you can customize the inputs as needed. Below 
 
 ```hcl
 module "log-analytics" {
-  source                           = "git::https://github.com/opsstation/terraform-azure-log-analytics.git?ref=v1.0.0"
+  source                           = "git::https://github.com/yadavprakash/terraform-azure-log-analytics.git?ref=v1.0.0"
   name                             = "app"
   environment                      = "test"
   resource_group_name              = module.resource_group.resource_group_name
@@ -33,14 +33,14 @@ module "log-analytics" {
 This example demonstrates how to create various AZURE resources using the provided modules. Adjust the input values to suit your specific requirements.
 
 # Examples
-For detailed examples on how to use this module, please refer to the [example](https://github.com/opsstation/terraform-azure-log-analytics/blob/master/_example) directory within this repository.
+For detailed examples on how to use this module, please refer to the [example](https://github.com/yadavprakash/terraform-azure-log-analytics/blob/master/_example) directory within this repository.
 
 # License
-This Terraform module is provided under the **MIT** License. Please see the [LICENSE](https://github.com/opsstation/terraform-azure-log-analytics/blob/master/LICENSE) file for more details.
+This Terraform module is provided under the **MIT** License. Please see the [LICENSE](https://github.com/yadavprakash/terraform-azure-log-analytics/blob/master/LICENSE) file for more details.
 
 # Author
 Your Name
-Replace **MIT** and **OpsStation** with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
+Replace **MIT** and **yadavprakash** with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
@@ -60,7 +60,7 @@ Replace **MIT** and **OpsStation** with the appropriate license and your informa
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_labels"></a> [labels](#module\_labels) | git::https://github.com/opsstation/terraform-azure-labels.git | v1.0.0 |
+| <a name="module_labels"></a> [labels](#module\_labels) | git::https://github.com/yadavprakash/terraform-azure-labels.git | v1.0.0 |
 
 ## Resources
 
@@ -91,7 +91,7 @@ Replace **MIT** and **OpsStation** with the appropriate license and your informa
 | <a name="input_log_analytics_workspace_location"></a> [log\_analytics\_workspace\_location](#input\_log\_analytics\_workspace\_location) | Location of the Workspace | `string` | `"West Us"` | no |
 | <a name="input_log_analytics_workspace_sku"></a> [log\_analytics\_workspace\_sku](#input\_log\_analytics\_workspace\_sku) | pecifies the Sku of the Log Analytics Workspace. Possible values are Free, PerNode, Premium, Standard, Standalone, Unlimited, CapacityReservation, and PerGB2018 (new Sku as of 2018-04-03). Defaults to PerGB2018 | `string` | `"PerGB2018"` | no |
 | <a name="input_log_enabled"></a> [log\_enabled](#input\_log\_enabled) | Is this Diagnostic Log enabled? Defaults to true. | `string` | `true` | no |
-| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'opsstation'. | `string` | `"git::git@github.com:opsstation/terraform-azure-labels.git"` | no |
+| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'yadavprakash'. | `string` | `"git::git@github.com:yadavprakash/terraform-azure-labels.git"` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name  (e.g. `app` or `cluster`). | `string` | `""` | no |
 | <a name="input_partner_solution_id"></a> [partner\_solution\_id](#input\_partner\_solution\_id) | The ID of the Storage Account where logs should be sent. | `string` | `null` | no |
 | <a name="input_repository"></a> [repository](#input\_repository) | Terraform current module repo | `string` | `""` | no |
