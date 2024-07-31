@@ -22,7 +22,7 @@ for creating AZURE resources, and you can customize the inputs as needed. Below 
 
 ```hcl
 module "log-analytics" {
-  source                           = "git::https://github.com/yadavprakash/terraform-azure-log-analytics.git?ref=v1.0.0"
+  source                           = "git::https://github.com/yadavprakash/terraform-azure-log-analytics.git"
   name                             = "app"
   environment                      = "test"
   resource_group_name              = module.resource_group.resource_group_name
